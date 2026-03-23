@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #00d9ff;
+  --primary-dark: #0077b6;
+  --primary-light: #48cae4;
+  --secondary-color: #7209b7;
+  --accent-color: #00ff88;
+
+  --dark-bg: #0a0f1c;
+  --light-bg: #0f172a;
+
+  --text-dark: #e0f7ff;
+  --text-light: #94a3b8;
+  --white: #ffffff;
+
+  --shadow: 0 10px 30px rgba(0,0,0,0.5);
+  --transition: 0.3s ease;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+}
+
+/* ICON */
+.icon {
+  color: var(--primary-color);
+  margin-right: 6px;
+  transition: var(--transition);
+}
+
+.icon:hover {
+  color: var(--secondary-color);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: var(--dark-bg);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  padding: 100px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 5%;
+}
+
+/* ABOUT */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 1rem;
+}
+
+.grid span {
+  background: var(--dark-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.grid span:hover {
+  transform: translateY(-5px);
+  color: var(--primary-color);
+}
+
+/* BUTTON */
+button, .resume-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover, .resume-btn:hover {
+  background: var(--secondary-color);
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: var(--dark-bg);
+  border: none;
+  color: var(--white);
+}
+
+/* PROFILE */
+.profile-pic {
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark-bg);
+}
